@@ -1,4 +1,4 @@
 const startPrompt = require("./lib/Questions");
-const { writeHTML } = require("./utils/generateHTML");
+const generatePage = require('./src/template');
 
 new startPrompt().startQuestions();
