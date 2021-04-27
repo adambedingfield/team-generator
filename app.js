@@ -1,4 +1,4 @@
-const Employee = require("./lib/Employee");
-const Questions = require("./lib/Questions");
+const startPrompt = require("./lib/Questions");
+const { writeHTML } = require("./utils/generateHTML");
 
-new Questions().startQuestions();
+new startPrompt().startQuestions()
