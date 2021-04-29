@@ -8,7 +8,7 @@ Team Generator is terminal based application that prompts a series of questions 
 * [Technology](#technology)<br>
 * [Questions](#questions)<br>
 ## Prompt<br>
-Type node app in the terminal and a series of questions as show below will begin. 
+Type node app in the terminal and a series of questions as shown below will begin. 
 ![prompt](./img/prompt.png)
 It will ask if the member is a Manager, Engineer, or Intern. All 3 include a name, id, and email question(emails can be clicked to write an email). Manager is asked a question about their office location, Engineer their github(which will link to their github page), and Intern which school they attend.
 ## Usage<br>
