@@ -74,7 +74,8 @@ const createTeam = employed => {
                     <p class="col-12">Email: <a href = "mailto: ${email}">${email}</a></p>
                     <p class="col-12">School: ${school}</p>
                   </div>
-              </div>`;
+              </div>
+              `;
             })
             .join('')}
             </div>
