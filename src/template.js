@@ -1,9 +1,6 @@
-const Employee = require("../lib/Employee");
-const Manager = require("../lib/Manager");
-const Engineer = require("../lib/Engineer");
 const { writeHTML, copyFile } = require("../utils/generateHTML");
 
-const createManager = employed => {
+const createTeam = employed => {
     copyFile();
     return writeHTML(`
 <!DOCTYPE html>
@@ -63,7 +60,6 @@ const createManager = employed => {
             `;
           })
           .join('')}
-
         ${employed
           .filter(({ school }) => school)
           .map(({ name, id, email, role, school }) => {
@@ -78,28 +74,13 @@ const createManager = employed => {
                     <p class="col-12">Email: <a href = "mailto: ${email}">${email}</a></p>
                     <p class="col-12">School: ${school}</p>
                   </div>
-              </div>
-              `;
+              </div>`;
             })
             .join('')}
             </div>
-        </section>
-        
-        
+        </section>   
 </body>`);
 };
 
-const createEngineer = () => {
-    createManager();
-};
 
-const createIntern = (Intern) => {
-    return writeHTML(`${Intern.name},
-${Intern.id},
-${Intern.email},
-${Intern.school}
-    `);
-};
-
-
-module.exports = { createEngineer, createIntern, createManager };
+module.exports = { createTeam };
