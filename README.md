@@ -1,6 +1,6 @@
 # Team Generator<br>
 ## Description<br>
-Team Generator is terminal based application that prompts a series of questions to build you a webpage displaying your project team. All you have to do is type node app in the terminal and it will then prompt begin the questions.<br>
+Team Generator is terminal based application that prompts a series of questions to build you a webpage displaying your project team. All you have to do is type node app in the terminal and it will then prompt begin the questions. Project members are sorted by their roles with managers being displayed first, then engineers and finally interns.<br>
 ## Table of Contents<br>
 * [Prompt](#prompt)<br>
 * [Usage](#usage)<br>
@@ -14,8 +14,8 @@ It will ask if the member is a Manager, Engineer, or Intern. All 3 include a nam
 ## Usage<br>
 This application is easy to use and is free to be used by the public.
 ## Webpage<br>
-Once you have answered the questions an html document will be created along with a style sheet displaying your team which can be found in the dist folder.
-An example webpage is show below as well as an individual card.
+Once you have answered the questions an html document will be created along with a style sheet displaying your team which can be found in the dist folder.<br>
+An example webpage is shown below as well as an individual card.
 ![layou](./img/layout.png)
 ![card](./img/card.png)
 ## Technology<br>
