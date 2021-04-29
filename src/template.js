@@ -1,5 +1,7 @@
 const { writeHTML, copyFile } = require("../utils/generateHTML");
 
+// creates the html from the answered questions
+// filters the employed array by Manager, Engineer, and Intern
 const createTeam = employed => {
     copyFile();
     return writeHTML(`

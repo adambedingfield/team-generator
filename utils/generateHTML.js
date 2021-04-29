@@ -1,5 +1,6 @@
 const fs = require('fs');
 
+// writes the html file in dist
 const writeHTML = fileContent => {
     return new Promise((resolve, reject) => {
         fs.writeFile('./dist/Team.html', fileContent, err => {
@@ -15,16 +16,14 @@ const writeHTML = fileContent => {
     });
 };
 
+// copies the style sheet from src to dist
 const copyFile = () => {
     return new Promise((resolve, reject) => {
         fs.copyFile('./src/style.css', './dist/style.css', err => {
-            //if thers an error reject the promise and send error to promise .catch()
             if (err) {
                 reject(err);
-                // return out of the function to make sure promise doesnt execute
                 return;
             }
-            // if everything went well, resolve promise and send successful data to the .then()
             resolve({
                 ok: true,
                 message: 'Stylesheet created!'
